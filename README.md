@@ -30,17 +30,6 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 ## Sistem Konfigurasi
 
-### Persyaratan Sistem
-|Sistem|Minimal|Disarankan|
-|--|--|--|
-|Virtualisasi|`KVM`|`KVM`|
-|Arch|`amd64`|`amd64`|
-|OS|`Debian 10`|`Debian 11`|
-|CPU|`1 Core`|`2 Cores` atau lebih|
-|RAM|`1 GB`|`2 GB` atau lebih|
-|Storage|`15 GB`|`20 GB` atau lebih|
-|Network|Open Port|Open Port|
-
 ### Fitur
 
 - Simple CLI Dashboard
@@ -54,6 +43,16 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Running the Service depends on the existing account (*Save Resources*)
 - Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
 
+### Persyaratan Sistem
+|Sistem|Minimal|Disarankan|
+|--|--|--|
+|Virtualisasi|`KVM`|`KVM`|
+|Arch|`amd64`|`amd64`|
+|OS|`Debian 10`|`Debian 11`|
+|CPU|`1 Core`|`2 Cores` atau lebih|
+|RAM|`1 GB`|`2 GB` atau lebih|
+|Storage|`15 GB`|`20 GB` atau lebih|
+|Network|Open Port|Open Port|
 
 ### Port List
 |Tunnel Type|Port List|
