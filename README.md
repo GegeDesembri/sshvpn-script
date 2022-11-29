@@ -114,7 +114,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 ## Dukungan
 
-Silahkan bergabung pada grup dan channel Telegram berikut untuk mendapatkan informasi tentang Patch atau hal yang berhubungan dengan peningkatan funsi script.
+Silahkan bergabung pada grup dan channel Telegram berikut untuk mendapatkan informasi tentang Patch atau hal yang berhubungan dengan peningkatan fungsi script.
 - Telegram : [GegeVPS Admin](https://t.me/GegeVPS)
 - Telegram Grup : [AutoScript Technical Support](https://t.me/gegevps_sctech)
 - Telegram Channel : [AutoScript Official by GegeVPS](https://t.me/gegevps_autoscript)
