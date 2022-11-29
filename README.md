@@ -39,7 +39,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |CPU|`1 Core`|`2 Cores` atau lebih|
 |RAM|`1 GB`|`2 GB` atau lebih|
 |Storage|`15 GB`|`20 GB` atau lebih|
-|Network|`15 GB`|`20 GB` atau lebih|
+|Network|Open Port|Open Port|
 
 ### Fitur
 
