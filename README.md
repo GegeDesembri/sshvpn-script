@@ -94,9 +94,9 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 ### Informasi
 
-Jika dalam proses instalasi [Tahap 2](#Tahap-2), terjadi diskoneksi pada terminal. Jangan masukkan kembali perintah instalasi [Tahap 2](#Tahap-2). Silahkan masukkan perintah `screen -r debian` untuk melihat proses yang telah berjalan.
-Jika ingin melihat log instalasi dapat dilihat pada `/root/syslog.log`.
-Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau melalui [AutoScript Technical Support](https://t.me/gegevps_sctech).
+- Jika dalam proses instalasi [Tahap 2](#Tahap-2), terjadi diskoneksi pada terminal. Jangan masukkan kembali perintah instalasi [Tahap 2](#Tahap-2). Silahkan masukkan perintah `screen -r debian` untuk melihat proses yang telah berjalan.
+- Jika ingin melihat log instalasi dapat dilihat pada `/root/syslog.log`.
+- Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau melalui [AutoScript Technical Support](https://t.me/gegevps_sctech).
 
 ## Berlangganan
 
@@ -112,6 +112,7 @@ Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau 
 
 ## Dukungan
 
+Silahkan bergabung pada grup dan channel Telegram berikut untuk mendapatkan informasi tentang Patch atau hal yang berhubungan dengan peningkatan funsi script.
 - Telegram : [GegeVPS Admin](https://t.me/GegeVPS)
 - Telegram Grup : [AutoScript Technical Support](https://t.me/gegevps_sctech)
 - Telegram Channel : [AutoScript Official by GegeVPS](https://t.me/gegevps_autoscript)
