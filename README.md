@@ -1,9 +1,31 @@
 # Auto Script SSH/VPN
 
+
+
 ## Docs Index
 
-Sistem Konfigurasi
-[Persyaratan Sistem](#Persyaratan-Sistem)
+> [**Docs Index**](#Docs-Index)
+
+> [**Tentang**](#Tentang)
+
+> [**Sistem Konfigurasi**](#Sistem-Konfigurasi)
+
+- [Fitur](#Fitur)
+- [Persyaratan Sistem](#Persyaratan-Sistem)
+- [Port List](#Port-List)
+- [Websocket Path List](#Websocket-Path-List)
+
+> [**Instalasi**](#Instalasi)
+
+- [Tahap 1](#Tahap-1)
+- [Tahap 2](#Tahap-2)
+
+> [**Dukungan**](#Dukungan)
+
+## Tentang
+
+Auto Script ini memiliki masa trial selama 4 hari terhitung sejak script terinstall pada VPS. Setelah masa trial, admin server tidak dapat menambah atau mengahpus akun. Tunnel yang sudah berjalan dan terdapat akun yang masih aktif tetap dapat diakses hingga akun sudah kadaluarsa dan terhapus otomatis dari server.
+Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pada status trial. Masa aktif script Premium terhitung sejak hari pembayaran.
 
 ## Sistem Konfigurasi
 
@@ -17,6 +39,18 @@ Sistem Konfigurasi
 |Storage|`15 GB`|`20 GB` atau lebih|
 
 ### Fitur
+
+- SSL Cloudflare
+- Free Domain for Tunnel
+- Auto Update IP to Cloudflare Domain
+- One Port Multi Protocol
+- SWAP Memory 2GB
+- vnStat Web Interface
+- Simple CLI Dashboard
+- Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
+
+
+### Port List
 |Tunnel Type|Port List|
 |----|----|
 |OpenSSH|`22`|
@@ -46,11 +80,17 @@ Sistem Konfigurasi
 
 ## Instalasi
 
-### Langkah 1
+### Tahap 1
 
     addgroup dip
     apt update -y && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
 
-### Langkah 2
+### Tahap 2
 
     apt update && apt --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen nscd && wget --inet4-only --no-check-certificate -O debian.sh 'https://script2.gegevps.com/debian.sh' && chmod +x debian.sh && screen -S debian ./debian.sh
+
+## Dukungan
+
+- Telegram : [GegeVPS Admin](https://t.me/GegeVPS)
+- Telegram Grup : [AutoScript Technical Support](https://t.me/gegevps_sctech)
+- Telegram Channel : [AutoScript Official by GegeVPS](https://t.me/gegevps_autoscript)
