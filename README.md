@@ -1,13 +1,17 @@
 # Auto Script SSH/VPN
 
+Docs Index
+
+
+
 ### Sistem Minimal
 |Sistem|Minimal|Disarankan|
 |--|--|--|
-|Arch|amd64|amd64|
-|OS|Debian 10|Debian 11|
-|CPU|1 Core|2 Cores atau lebih|
-|RAM|amd64|amd64|
-|Storage|15 GB|20 GB|
+|Arch|`amd64`|`amd64`|
+|OS|`Debian 10`|`Debian 11`|
+|CPU|`1 Core`|`2 Cores` atau lebih|
+|RAM|`1 GB`|`2 GB` atau lebih|
+|Storage|`15 GB`|`20 GB` atau lebih|
 
 ### Fitur
 |Tunnel Type|Port List|
@@ -17,7 +21,7 @@
 |Stunnel|Dropbear `446`<br> SSH Websocket `445`<br> Softether `1195`<br> OpenVPN `2296`|
 |SSH WebSocket|`80` `443` `8880`|
 |SSH WebSocket TLS|`80` `443` <br>`445` [*Stunnel*]|
-|SlowDNS|`5300`|
+|SlowDNS|`53` `2222` `5300`|
 |OHP|OpenSSH `2083`<br> OpenVPN `2087`|
 |OpenVPN|TCP `2294`<br>UDP `2295`<br>TLS `2296` [*Stunnel*]<br>OHP `2087`|
 |HTTP Proxy|`8080`|
