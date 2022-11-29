@@ -1,10 +1,13 @@
 # Auto Script SSH/VPN
 
-Docs Index
+## Docs Index
 
+Sistem Konfigurasi
+[Persyaratan Sistem](#Persyaratan-Sistem)
 
+## Sistem Konfigurasi
 
-### Sistem Minimal
+### Persyaratan Sistem
 |Sistem|Minimal|Disarankan|
 |--|--|--|
 |Arch|`amd64`|`amd64`|
@@ -36,9 +39,9 @@ Docs Index
 ### Websocket Path List
 |Protokol|Default Path|
 |--|--|
-|SSH Websocket|`/blablabla`<br> `ws://you.dom.com`<br> `wss://you.dom.com`|
-|V2Ray|`/v2ray-vmess-ws-tls`<br> `/v2ray-vmess-ws-ntls`<br> `/v2ray-vmess-grpc`<br> `/v2ray-trojan-ws-tls`|
-|XRay|`/xray-vmess-ws-tls`<br> `/xray-vmess-ws-ntls`<br> `/xray-vmess-grpc`<br> `/xray-trojan-ws-tls`|
+|SSH Websocket<br> [*`Dynamic Path`*]|`/blablabla`<br> `ws://you.dom.com`<br> `wss://you.dom.com`|
+|V2Ray<br> [*`Static Path`*]|`/v2ray-vmess-ws-tls`<br> `/v2ray-vmess-ws-ntls`<br> `/v2ray-vmess-grpc`<br> `/v2ray-trojan-ws-tls`|
+|XRay<br> [*`Static Path`*]|`/xray-vmess-ws-tls`<br> `/xray-vmess-ws-ntls`<br> `/xray-vmess-grpc`<br> `/xray-trojan-ws-tls`|
 
 
 ## Instalasi
