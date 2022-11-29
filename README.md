@@ -45,7 +45,8 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 - Simple CLI Dashboard
 - One Port Multi Protocol
-- SSL Cloudflare
+- Cloudflare SSL
+- Cloudflare CDN Support (*Websocket*)
 - Free Domain for Tunnel
 - Auto Update IP to Cloudflare Domain
 - SWAP Memory 2GB
