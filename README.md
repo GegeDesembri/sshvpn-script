@@ -19,6 +19,9 @@
 
 - [Tahap 1](#Tahap-1)
 - [Tahap 2](#Tahap-2)
+- [Informasi](#Informasi)
+
+> [**Berlangganan**](#Berlangganan)
 
 > [**Dukungan**](#Dukungan)
 
@@ -32,11 +35,13 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 ### Persyaratan Sistem
 |Sistem|Minimal|Disarankan|
 |--|--|--|
+|Virtualisasi|`KVM`|`KVM`|
 |Arch|`amd64`|`amd64`|
 |OS|`Debian 10`|`Debian 11`|
 |CPU|`1 Core`|`2 Cores` atau lebih|
 |RAM|`1 GB`|`2 GB` atau lebih|
 |Storage|`15 GB`|`20 GB` atau lebih|
+|Network|`15 GB`|`20 GB` atau lebih|
 
 ### Fitur
 
@@ -82,12 +87,28 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 ### Tahap 1
 
-    addgroup dip
+    addgroup dip &>/dev/null
     apt update -y && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
 
 ### Tahap 2
 
     apt update && apt --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen nscd && wget --inet4-only --no-check-certificate -O debian.sh 'https://script2.gegevps.com/debian.sh' && chmod +x debian.sh && screen -S debian ./debian.sh
+
+### Informasi
+
+Jika dalam proses instalasi [Tahap 2](#Tahap-2), terjadi diskoneksi pada terminal. Jangan masukkan kembali perintah instalasi [Tahap 2](#Tahap-2). Silahkan masukkan perintah `screen -r debian` untuk melihat proses yang telah berjalan.
+Jika ingin melihat log instalasi dapat dilihat pada `/root/syslog.log`.
+Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau melalui [AutoScript Technical Support](https://t.me/gegevps_sctech).
+
+## Berlangganan
+
+- Pembelian pertama untuk 1 IP Rp. 20.000,-
+- Perpanjangan Rp. 25.000,- /IP /30Hari
+- Selama masa Trial pastikan semua layanan dapat berjalan tanpa masalah
+- Pengujian koneksi layanan gunakan koneksi internet yang normal bukan menggunakan method.
+- Tanggung jawab admin hanya sebatas fitur dan layanan yang sudah tertulis
+- Server yang tersuspend karena larangan penggunaan VPN oleh provider VPS adalah diluar kuasa admin. Jadi pastikan server yang akan digunakan memiliki izin untuk penggunaan VPN Server.
+- Tidak ada refund setelah transaksi berhasil.
 
 ## Dukungan
 
