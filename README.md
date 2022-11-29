@@ -106,10 +106,11 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Perpanjangan Rp. 25.000,- /IP /30Hari
 - Proses resolv IP pada database memakan waktu sekitar 5 - 10 menit
 - Selama masa Trial pastikan semua layanan dapat berjalan tanpa masalah
-- Pengujian koneksi layanan gunakan koneksi internet yang normal bukan menggunakan method.
+- Pengujian koneksi layanan gunakan koneksi internet yang normal bukan menggunakan method
 - Tanggung jawab admin hanya sebatas fitur dan layanan yang sudah tertulis
-- Server yang tersuspend karena larangan penggunaan VPN oleh provider VPS adalah diluar kuasa admin. Jadi pastikan server yang akan digunakan memiliki izin untuk penggunaan VPN Server.
-- Tidak ada refund setelah transaksi berhasil.
+- Server yang tersuspend karena larangan penggunaan VPN oleh provider VPS adalah diluar kuasa admin. Jadi pastikan server yang akan digunakan memiliki izin untuk penggunaan VPN Server
+- Pelanggan dianggap setuju dengan ketentuan di atas
+- Tidak ada refund setelah transaksi berhasil
 
 ## Dukungan
 
