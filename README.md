@@ -43,13 +43,14 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 ### Fitur
 
+- Simple CLI Dashboard
+- One Port Multi Protocol
 - SSL Cloudflare
 - Free Domain for Tunnel
 - Auto Update IP to Cloudflare Domain
-- One Port Multi Protocol
 - SWAP Memory 2GB
 - vnStat Web Interface
-- Simple CLI Dashboard
+- Running the Service depends on the existing account (*Save Resources*)
 - Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
 
 
