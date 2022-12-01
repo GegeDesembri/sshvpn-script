@@ -68,7 +68,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |HTTP Proxy|`8080`|
 |Socks5 Proxy|`80` `443` `990`|
 |BadVPN-udpgw|`7200` `7300` `7400`|
-|SoftetherVPN|Remote `5555`<br> TCP/UDP `1194`<br> TLS `1195` [*Stunnel*]<br> SSTP `4433`<br> L2TP IPSec `500` `1701` `4500`|
+|SoftetherVPN|Remote `5555`<br> OpenVPN TCP/UDP `1194`<br> OpenVPN TLS `1195` [*Stunnel*]<br> SSTP `4433`<br> L2TP IPSec `500` `1701` `4500`|
 |Trojan-GFW|`2443`|
 |Hysteria|`80` `443`|
 |V2Ray|VMess WS TLS `80` `443`<br> VMess WS NonTLS `80` `443` `8881`<br> VLess TCP XTLS `5443`<br> VMess gRPC `80` `443` `11443`<br>Trojan TCP TLS `3443`<br> Trojan WS TLS `80` `443`|
