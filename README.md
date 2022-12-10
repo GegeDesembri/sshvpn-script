@@ -79,8 +79,8 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |Protokol|Default Path|
 |--|--|
 |SSH Websocket<br> [*`Dynamic Path`*]|`/blablabla`<br> `ws://you.dom.com`<br> `wss://you.dom.com`|
-|V2Ray<br> [*`Dynamic Path`*]<br> [*`Static Path`*]|`/YOURPATH?type=v2ray-vmess-ws-tls`<br> `/YOURPATH?type=v2ray-vmess-ws-ntls`<br> `/YOURPATH?type=v2ray-trojan-ws-tls`<br> `/v2ray-vmess-grpc`<br> <br> **Replace `YOURPATH` with your method path* |
-|XRay<br> [*`Dynamic Path`*]<br> [*`Static Path`*]|`/YOURPATH?type=xray-vmess-ws-tls`<br> `/YOURPATH?type=xray-vmess-ws-ntls`<br> `/YOURPATH?type=xray-trojan-ws-tls`<br> `/xray-vmess-grpc`<br> <br> **Replace `YOURPATH` with your method path*|
+|V2Ray<br> [*`Dynamic Path`*]<br> [*`Static Path`*]|`/YOURPATH?type=v2ray-vmess-ws-tls`<br> `/YOURPATH?type=v2ray-vmess-ws-ntls`<br> `/YOURPATH?type=v2ray-trojan-ws-tls`<br> `/YOURPATH/v2ray-vmess-ws-tls`<br> `/YOURPATH/v2ray-vmess-ws-ntls`<br> `/YOURPATH/v2ray-trojan-ws-tls`<br> `/v2ray-vmess-grpc`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash* |
+|XRay<br> [*`Dynamic Path`*]<br> [*`Static Path`*]|`/YOURPATH?type=xray-vmess-ws-tls`<br> `/YOURPATH?type=xray-vmess-ws-ntls`<br> `/YOURPATH?type=xray-trojan-ws-tls`<br> `/YOURPATH/vxray-vmess-ws-tls`<br> `/YOURPATH/xray-vmess-ws-ntls`<br> `/YOURPATH/xray-trojan-ws-tls`<br> `/xray-vmess-grpc`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash*|
 
 
 ## Instalasi
