@@ -65,7 +65,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |Stunnel|Dropbear `446`<br> SSH Websocket `445`<br> Softether `1195`<br> OpenVPN `2296`|
 |SSH WebSocket|`80` `443` `8880`|
 |SSH WebSocket TLS|`80` `443` <br>`445` [*Stunnel*]|
-|SlowDNS|`53` `2222` `53`|
+|SlowDNS|`53` `2222`|
 |OHP|OpenSSH `2083`<br> OpenVPN `2087`|
 |OpenVPN|TCP `2294`<br>UDP `2295`<br>TLS `2296` [*Stunnel*]<br>OHP `2087`|
 |HTTP Proxy|`8080`|
