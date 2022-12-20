@@ -1,4 +1,5 @@
 
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -36,7 +37,8 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Simple CLI Dashboard
 - One Port Multi Protocol
 - Cloudflare SSL
-- Cloudflare CDN Support (*Websocket*)
+- Cloudflare CDN Support
+- AWS CloudFront CDN Support [HTTP/HTTPS] (*with your own AWS account*)
 - Free Domain for Tunnel
 - Auto Update IP to Cloudflare Domain
 - SWAP Memory 2GB
