@@ -1,5 +1,6 @@
 
 
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -72,17 +73,16 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |Socks5 Proxy|`80` `443` `990`|
 |BadVPN-udpgw|`7200` `7300` `7400`|
 |SoftetherVPN|Remote `5555`<br> OpenVPN TCP/UDP `1194`<br> OpenVPN TLS `1195` [*Stunnel*]<br> SSTP `4433`<br> L2TP IPSec `500` `1701` `4500`|
-|Trojan-GFW|`2443`|
 |Hysteria|`80` `443`|
-|V2Ray|VMess WS TLS `80` `443`<br> VMess WS NonTLS `80` `443` `8881`<br> VLess TCP XTLS `5443`<br> VMess gRPC `80` `443` `11443`<br>Trojan TCP TLS `3443`<br> Trojan WS TLS `80` `443`|
-|XRay|VMess WS TLS `80` `443`<br> VMess WS NonTLS `80` `443` `2095`<br> VLess TCP XTLS `6443`<br> VMess gRPC `80` `443` `11444`<br>Trojan TCP TLS `3445`<br> Trojan WS TLS `80` `443`|
+|V2Ray<br> `VMess`<br> `VLess`<br> `Trojan`|VMess WS Non-TLS `80` `443`<br>VMess WS TLS `80` `443`<br>VLess WS Non-TLS `80` `443`<br>VLess WS TLS `80` `443`<br>Trojan WS Non-TLS `80` `443`<br>Trojan WS TLS `80` `443`<br>|
+|XRay<br> `VMess`<br> `VLess`<br> `Trojan`|VMess WS Non-TLS `80` `443`<br>VMess WS TLS `80` `443`<br>VLess WS Non-TLS `80` `443`<br>VLess WS TLS `80` `443`<br>Trojan WS Non-TLS `80` `443`<br>Trojan WS TLS `80` `443`<br>|
 
 ### Websocket Path List
 |Protokol|Default Path|
 |--|--|
 |SSH Websocket<br> [*`Dynamic Path`*]|`/blablabla`<br> `ws://you.dom.com`<br> `wss://you.dom.com`|
-|V2Ray<br> [*`Dynamic Path`*]<br> [*`Static Path`*]| `/YOURPATH/v2ray-vmess-ws-tls`<br> `/YOURPATH/v2ray-vmess-ws-ntls`<br> `/YOURPATH/v2ray-trojan-ws-tls`<br> `/YOURPATH?type=v2ray-vmess-ws-tls`<br> `/YOURPATH?type=v2ray-vmess-ws-ntls`<br> `/YOURPATH?type=v2ray-trojan-ws-tls`<br>`/v2ray-vmess-grpc`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash* |
-|XRay<br> [*`Dynamic Path`*]<br> [*`Static Path`*]|`/YOURPATH/vxray-vmess-ws-tls`<br> `/YOURPATH/xray-vmess-ws-ntls`<br> `/YOURPATH/xray-trojan-ws-tls`<br> `/YOURPATH?type=xray-vmess-ws-tls`<br> `/YOURPATH?type=xray-vmess-ws-ntls`<br> `/YOURPATH?type=xray-trojan-ws-tls`<br>`/xray-vmess-grpc`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash*|
+|V2Ray<br> [*`Dynamic Path`*]| Path without Query <br>`/YOURPATH/v2ray-vmess-ws-tls`<br> `/YOURPATH/v2ray-vmess-ws-ntls`<br> `/YOURPATH/v2ray-vless-ws-ntls`<br> `/YOURPATH/v2ray-vless-ws-tls`<br> `/YOURPATH/v2ray-trojan-ws-ntls`<br> `/YOURPATH/v2ray-trojan-ws-tls`<br> <br>Path with Query <br> `/YOURPATH?type=v2ray-vmess-ws-ntls`<br> `/YOURPATH?type=v2ray-vmess-ws-tls`<br> `/YOURPATH?type=v2ray-vless-ws-ntls`<br> `/YOURPATH?type=v2ray-vless-ws-tls`<br> `/YOURPATH?type=v2ray-trojan-ws-ntls`<br> `/YOURPATH?type=v2ray-trojan-ws-tls`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash* |
+|XRay<br> [*`Dynamic Path`*]| Path without Query <br>`/YOURPATH/xray-vmess-ws-tls`<br> `/YOURPATH/xray-vmess-ws-ntls`<br> `/YOURPATH/xray-vless-ws-ntls`<br> `/YOURPATH/xray-vless-ws-tls`<br> `/YOURPATH/xray-trojan-ws-ntls`<br> `/YOURPATH/xray-trojan-ws-tls`<br> <br>Path with Query <br> `/YOURPATH?type=xray-vmess-ws-ntls`<br> `/YOURPATH?type=xray-vmess-ws-tls`<br> `/YOURPATH?type=xray-vless-ws-ntls`<br> `/YOURPATH?type=xray-vless-ws-tls`<br> `/YOURPATH?type=xray-trojan-ws-ntls`<br> `/YOURPATH?type=xray-trojan-ws-tls`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash* |
 
 
 ## Instalasi
