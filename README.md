@@ -50,7 +50,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 ### Persyaratan Sistem
 |Sistem|Minimal|Disarankan|
 |--|--|--|
-|Virtualisasi|`KVM`|`KVM`|
+|Virtualisasi|`KVM`|`KVM` `Xen`|
 |Arch|`amd64`|`amd64`|
 |OS|`Debian 10`|`Debian 11`|
 |CPU|`1 Core`|`2 Cores` atau lebih|
