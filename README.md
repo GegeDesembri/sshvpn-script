@@ -49,17 +49,17 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
 
 ### Persyaratan Sistem
-|Sistem|Tested|Minimal|Disarankan|Supported|
+|Sistem|Supported|Tested|Minimal|Disarankan|
 |--|--|--|--|--|
-|Virtualisasi|`Xen`|`KVM`|`KVM`|`KVM` `Xen` `VMware` `VirtualBox`|
+|Virtualisasi|`KVM` `Xen` `VMware` `VirtualBox`|`Xen`|`KVM`|`KVM`|
 |CPU Arch|`amd64`|`amd64`|`amd64`|`amd64`|
-|OS|`Debian 11`|`Debian 10`|`Debian 11`|`Debian 10`<br> `Debian 11`|
-|OS Arch|`64 Bit`|`64 Bit`|`64 Bit`|`64 Bit`|-|
-|CPU|`1 Core`|`1 Core`|`2 Cores` *atau lebih*|-|
-|RAM|`512 GB`|`1 GB`|`2 GB` *atau lebih*|-|
-|Storage|`20 GB`|`15 GB`|`20 GB` *atau lebih*|-|
+|OS|`Debian 10`<br> `Debian 11`|`Debian 11`|`Debian 10`|`Debian 11`|
+|OS Arch|-|`64 Bit`|`64 Bit`|`64 Bit`|`64 Bit`|
+|CPU|-|`1 Core`|`1 Core`|`2 Cores` *atau lebih*|
+|RAM|-|`512 GB`|`1 GB`|`2 GB` *atau lebih*|
+|Storage|-|`20 GB`|`15 GB`|`20 GB` *atau lebih*|
 |Network|*Open Port*|*Open Port*|*Open Port*|*Open Port*|
-|ISP|*AWS Lightsail*|-|-|*AWS Lightsail<br> DigitalOcean<br> Linode<br> Vultr<br> OVH<br> APIK Media<br> Atha Media<br> Biznet<br> Media Antar Nusa<br> IP ServerOne*|
+|ISP|*AWS Lightsail<br> DigitalOcean<br> Linode<br> Vultr<br> OVH<br> APIK Media<br> Atha Media<br> Biznet<br> Media Antar Nusa<br> IP ServerOne*|*AWS Lightsail*|-|-|
 
 ### Port List
 |Tunnel Type|Port List|
