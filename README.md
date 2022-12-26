@@ -2,6 +2,7 @@
 
 
 
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -58,7 +59,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |CPU|-|`1 Core`|`1 Core`|`2 Cores` *atau lebih*|
 |RAM|-|`512 GB`|`1 GB`|`2 GB` *atau lebih*|
 |Storage|-|`20 GB`|`15 GB`|`20 GB` *atau lebih*|
-|Network|*Open Port*|*Open Port*|*Open Port*|*Open Port*|
+|Network|*1xIPv4<br> Disable IPv6<br> Open Port*|*1xIPv4<br> Disable IPv6<br> Open Port*|*1xIPv4<br> Disable IPv6<br> Open Port*|*1xIPv4<br> Disable IPv6<br> Open Port*|
 |ISP|*AWS Lightsail<br> DigitalOcean<br> Linode<br> Vultr<br> OVH<br> APIK Media<br> Atha Media<br> Biznet<br> Media Antar Nusa<br> IP ServerOne*|*AWS Lightsail*|-|-|
 
 ### Port List
