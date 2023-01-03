@@ -30,6 +30,7 @@
 
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
+- [Softether VPN Server Password](#softether-vpn-server-password)
 - [Cloudflare Public API Keys](#cloudflare-public-api-keys)
 - [AWS CloudFront CDN (API Key)](#aws-cloudfront-cdn-api-key)
 
