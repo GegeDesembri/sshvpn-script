@@ -157,6 +157,14 @@ Keluar dan simpan, lalu restart `SSLHm`
 
     systemctl restart sslhm@443
 
+### Softether VPN Server Password
+
+Gunakan perintah berikut ini untuk melihat Password Server SoftetherVPN untuk melakukan remote melalui SoftetherVPN Manager.
+
+    source /etc/gegevps/softether/params && echo "${MYPASS}"
+
+Password akan muncul.
+
 ### Cloudflare Public API Keys
 
  1. Pergi ke https://dash.cloudflare.com/profile/api-tokens
