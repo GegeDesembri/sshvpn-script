@@ -5,6 +5,7 @@
 
 
 
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -127,6 +128,7 @@ Bisa edit file berikut
 
 ### Ganti Port SSH Stunnel ke 443 (Default 446)
 
+***Perhatian***: *Penggantian port ini akan menyebabkan port 443 hanya akan digunakan untuk SSH Stunnel dan semua layanan yang pada awalnya menggunakan port 443 melalui port 663 (NginX) kehilangan akses port 443. Gunakan apabila anda yakin hanya ingin memakaian port 443 SSL untuk SSH Stunnel saja.*
 Bisa edit file berikut
 
     nano /etc/gegevps/sslhm/443.cfg
