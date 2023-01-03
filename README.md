@@ -28,10 +28,10 @@
 
 > [**Tutorial**](#Instalasi)
 
-- [Ganti banner OpenSSH/Dropbear](#Tahap-1)
-- [Ganti Port SSH Stunnel ke 443 (Default 446)](#Tahap-2)
-- [Cloudflare Public API Keys](#Informasi)
-- [AWS CloudFront CDN (API Key)](#Informasi)
+- [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
+- [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
+- [Cloudflare Public API Keys](#cloudflare-public-api-keys)
+- [AWS CloudFront CDN (API Key)](#aws-cloudfront-cdn-api-key)
 
 > [**Berlangganan**](#Berlangganan)
 
