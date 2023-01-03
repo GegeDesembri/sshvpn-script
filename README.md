@@ -26,6 +26,13 @@
 - [Tahap 2](#Tahap-2)
 - [Informasi](#Informasi)
 
+> [**Tutorial**](#Instalasi)
+
+- [Ganti banner OpenSSH/Dropbear](#Tahap-1)
+- [Ganti Port SSH Stunnel ke 443 (Default 446)](#Tahap-2)
+- [Cloudflare Public API Keys](#Informasi)
+- [AWS CloudFront CDN (API Key)](#Informasi)
+
 > [**Berlangganan**](#Berlangganan)
 
 > [**Dukungan**](#Dukungan)
@@ -107,6 +114,66 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Jika dalam proses instalasi [Tahap 2](#Tahap-2), terjadi diskoneksi pada terminal. Jangan masukkan kembali perintah instalasi [Tahap 2](#Tahap-2). Silahkan masukkan perintah `screen -r debian` untuk melihat proses yang telah berjalan.
 - Jika ingin melihat log instalasi dapat dilihat pada `/root/syslog.log`.
 - Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau melalui [AutoScript Technical Support](https://t.me/gegevps_sctech).
+
+## Tutorial
+
+### Ganti banner OpenSSH/Dropbear
+
+Bisa edit file berikut
+
+    nano /etc/gegevps/banner
+
+### Ganti Port SSH Stunnel ke 443 (Default 446)
+
+Bisa edit file berikut
+
+    nano /etc/gegevps/sslhm/443.cfg
+
+Cari bagian `TLS Section`
+
+    {
+    	 name: "tls",
+    	 service: "tls",
+    	 host: "127.0.0.1",
+    	 port: "663",
+    	 keepalive: true,
+    	 fork: true,
+    	 tfo_ok: true
+    }
+
+Ganti port 663 (`nginx`) menjadi 446 (`SSH Stunnel`)
+
+    {
+    	 name: "tls",
+    	 service: "tls",
+    	 host: "127.0.0.1",
+    	 port: "446",
+    	 keepalive: true,
+    	 fork: true,
+    	 tfo_ok: true
+    }
+
+Keluar dan simpan, lalu restart `SSLHm`
+
+    systemctl restart sslhm@443
+
+### Cloudflare Public API Keys
+
+ 1. Pergi ke https://dash.cloudflare.com/profile/api-tokens
+ 2. Bagian "*API Keys*"
+ 3. Pilih "*Global API Key*"
+ 4. Klik "*View*"
+ 5. Masukkan "*Password Cloudflare*"
+ 6. Copy dan Paste Key yang muncul
+
+### AWS CloudFront CDN (API Key)
+
+ 1. Pergi ke https://go.aws/3FVihd9
+ 2. Cari bagian "*Access keys*"
+ 3. Klik "*Buat access key*"
+ 4. Ikuti prosedur
+ 5. Download dan simpan API Key
+ 6. Masukkan "*aws_access_key_id*" dan "*aws_secret_access_key*" ke VPS
 
 ## Berlangganan
 
