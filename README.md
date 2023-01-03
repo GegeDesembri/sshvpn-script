@@ -49,6 +49,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 - Simple CLI Dashboard
 - One Port Multi Protocol
+- Lightweight CPU on Fresh Install idle (*CPU Usage Avrg. 2-3%*)
 - Cloudflare SSL
 - Cloudflare CDN Support
 - AWS CloudFront CDN Support [HTTP/HTTPS] (*with your own AWS account*)
