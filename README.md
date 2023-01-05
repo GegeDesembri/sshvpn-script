@@ -106,7 +106,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 ### Tahap 1
 
     addgroup dip &>/dev/null
-    apt-get update -y && apt-get install --reinstall -y grub && apt-get upgrade -y --fix-missing && update-grub && sleep 2 && reboot
+    apt update -y && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
 
 ### Tahap 2
 
@@ -125,6 +125,12 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 Bisa edit file berikut
 
     nano /etc/gegevps/banner
+
+### Disable Pre-fill VPNRay
+
+Jika tidak membutuhkan fitur *prefill* untuk kebutuhan penambahan, penghapusan, pembaruan akun VPNRay dalam pengembangan web bisa masukkan perintah dibawah ini.
+
+    echo 'disable' > /etc/gegevps/vpnray/vpnray-prefill
 
 ### Ganti Port SSH Stunnel ke 443 (Default 446)
 
