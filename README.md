@@ -30,6 +30,7 @@
 > [**Tutorial**](#Instalasi)
 
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
+- [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
 - [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
 - [Softether VPN Server Password](#softether-vpn-server-password)
 - [Cloudflare Public API Keys](#cloudflare-public-api-keys)
