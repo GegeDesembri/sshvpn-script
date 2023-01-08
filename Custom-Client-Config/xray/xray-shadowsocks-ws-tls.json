@@ -9,13 +9,13 @@
             "settings": {
                 "servers": [
                     {
-						"address": "IPVPS",
-						"port": PORT_TUNNEL,
-						"method": "aes-128-gcm",
-						"email": "PASSWORD",
-						"password": "PASSWORD",
-						"level": 0
-					}
+                        "address": "IPVPS",
+                        "port": PORT_TUNNEL,
+                        "method": "aes-128-gcm",
+                        "email": "PASSWORD",
+                        "password": "PASSWORD",
+                        "level": 0
+                    }
                 ]
             },
             "streamSettings": {
