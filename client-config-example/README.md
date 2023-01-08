@@ -1,1 +1,0 @@
-# Client Configuration Example
