@@ -1,0 +1,16 @@
+proxies:
+  - name: vmess-grpc-tls
+    server: IPVPS
+    port: PORT_TUNNEL
+    type: vmess
+    uuid: UUID_DATA
+    sni: DOMAIN
+    alterId: 0
+    cipher: auto
+    tls: true
+    sni: DOMAINVPS
+    skip-cert-verify: true
+    udp: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "SERVICENAME"

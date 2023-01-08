@@ -1,0 +1,13 @@
+proxies:
+  - name: trojan-grpc-tls
+    server: IPVPS
+    port: PORT_TUNNEL
+    type: trojan
+    password: "PASSWORD"
+    network: grpc
+    tls: true
+    sni: DOMAINVPS
+    skip-cert-verify: true
+    udp: true
+    grpc-opts:
+      grpc-service-name: "SERVICENAME"

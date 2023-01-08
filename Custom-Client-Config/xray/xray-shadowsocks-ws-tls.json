@@ -1,0 +1,85 @@
+{
+    "outbounds": [
+        {
+            "protocol": "shadowsocks",
+            "mux": {
+                "concurrency": 8,
+                "enabled": true
+            },
+            "settings": {
+                "servers": [
+                    {
+						"address": "IPVPS",
+						"port": PORT_TUNNEL,
+						"method": "aes-128-gcm",
+						"email": "PASSWORD",
+						"password": "PASSWORD",
+						"level": 0
+					}
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": true,
+                    "serverName": "DOMAINVPS"
+                },
+                "wsSettings": {
+                    "headers": {
+                        "Host": "DOMAINVPS"
+                    },
+                    "path": "WSPATH"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "settings": {},
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "settings": {
+                "response": {
+                    "type": "http"
+                }
+            },
+            "tag": "block"
+        }
+    ],
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "inboundTag": [
+                    "proxy"
+                ],
+                "outboundTag": "dns",
+                "type": "field"
+            },
+            {
+                "inboundTag": [
+                    "http"
+                ],
+                "outboundTag": "proxy",
+                "type": "field"
+            }
+        ]
+    },
+    "dns": {
+        "hosts": {
+            "domain:googleapis.cn": "googleapis.com"
+        },
+        "servers": [
+            "8.8.4.4"
+        ],
+        "tag": "dns"
+    },
+    "log": {
+        "loglevel": "warning"
+    },
+    "inbounds": [
+    ]
+}
