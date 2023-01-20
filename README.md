@@ -1,4 +1,3 @@
-
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -24,6 +23,8 @@
 
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
+- [Ganti SSH Websocket Dropbear ke OpenSSH](#ganti-ssh-websocket-dropbear-ke-openssh)
+- [Ganti SSH Stunnel Dropbear ke OpenSSH](#ganti-ssh-stunnel-dropbear-ke-openssh)
 - [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
 - [Softether VPN Server Password](#softether-vpn-server-password)
 - [Cloudflare Public API Keys](#cloudflare-public-api-keys)
