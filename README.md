@@ -1,3 +1,4 @@
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -21,8 +22,8 @@
 
 > [**Tutorial**](#Instalasi)
 
-- [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
+- [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
 - [Softether VPN Server Password](#softether-vpn-server-password)
 - [Cloudflare Public API Keys](#cloudflare-public-api-keys)
@@ -113,17 +114,91 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 ## Tutorial
 
+### Disable Pre-fill VPNRay
+
+Jika tidak membutuhkan fitur *prefill* untuk kebutuhan penambahan, penghapusan, pembaruan akun VPNRay dalam pengembangan web bisa masukkan perintah dibawah ini.
+
+    echo 'disable' > /etc/gegevps/vpnray/vpnray-prefill
+
 ### Ganti banner OpenSSH/Dropbear
 
 Bisa edit file berikut
 
     nano /etc/gegevps/banner
 
-### Disable Pre-fill VPNRay
+### Ganti SSH Websocket Dropbear ke OpenSSH
 
-Jika tidak membutuhkan fitur *prefill* untuk kebutuhan penambahan, penghapusan, pembaruan akun VPNRay dalam pengembangan web bisa masukkan perintah dibawah ini.
+Edit file berikut
 
-    echo 'disable' > /etc/gegevps/vpnray/vpnray-prefill
+    nano /usr/local/bin/sshws
+
+Ganti baris yang berisi
+
+    DEFAULT_HOST = '127.0.0.1:143'
+
+Menjadi
+
+    DEFAULT_HOST = '127.0.0.1:22'
+
+Reboot VPS.
+
+### Ganti SSH Stunnel Dropbear ke OpenSSH
+
+Edit file berikut
+
+    nano /etc/gegevps/stunnel/server.conf
+
+Cari bagian `SSH Section`
+
+    [ssh]
+    accept = 446
+    connect = 127.0.0.1:143
+
+Ganti port 143 (`Dropbear`) menjadi 22 (`OpenSSH`)
+
+    [ssh]
+    accept = 446
+    connect = 127.0.0.1:22
+
+Restart Stunnel
+
+    systemctl restart stunnel@server
+
+### Ganti Running Mode SSLHm SystemD ke screen
+
+***Perhatian***: *Penggantian ini akan mengubah Running Mode SSLHm port 80 dan 443 yang semula menggunkana SystemD menjadi screen melalui Scheduler Crontab. Hanya gunakan apabila ada memiliki masalah pada port 80 dan 443 yang tiba-tiba tidak bisa terhubung walaupun status di server Running tanpa masalah.*
+
+Masukkan perintah dibawah ini.
+
+    crontab -l > /tmp/crontab.txt
+    echo '' >> /tmp/crontab.txt
+    echo -e '# SSLHm via screen
+    @reboot screen -dmS sslh-80 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/80.cfg
+    @reboot screen -dmS sslh-443 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/443.cfg' >> /tmp/crontab.txt
+    crontab /tmp/crontab.txt
+    rm -rf /tmp/crontab.txt
+    
+    systemctl disable sslhm@80 sslhm@443
+    systemctl stop sslhm@80 sslhm@443
+    screen -dmS sslh-80 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/80.cfg
+    screen -dmS sslh-443 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/443.cfg
+
+Untuk memastikan bahwa migrasi running mode sslhm 80 dan 443 berhasil. Masukkan perintah berikut ini.
+
+    crontab -l && screen -ls
+
+Pastikan output perintah terdapat beberapa baris berikut.
+
+    ...
+    @reboot screen -dmS sslh-80 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/80.cfg
+    @reboot screen -dmS sslh-443 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/443.cfg
+    ...
+    ...
+    713.sslh-80 (01/16/2023 09:47:31 PM) (Detached)
+    712.sslh-443 (01/16/2023 09:47:31 PM) (Detached)
+    ...
+
+Untuk lebih memastikan kembali silahkan mengetes langsung dengan perangkat menggunakan tunnel port 80 dan 443.
 
 ### Ganti Port SSH Stunnel ke 443 (Default 446)
 
