@@ -19,7 +19,7 @@
 - [Tahap 2](#Tahap-2)
 - [Informasi](#Informasi)
 
-> [**Tutorial**](#Instalasi)
+> [**Tutorial**](#Tutorial)
 
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
