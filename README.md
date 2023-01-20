@@ -45,13 +45,13 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 
 - Simple CLI Dashboard
 - One Port Multi Protocol
+- Free Domain for Tunnel
 - Cloudflare SSL
 - Cloudflare CDN Support
-- AWS CloudFront CDN Support [HTTP/HTTPS] (*with your own AWS account*)
-- Free Domain for Tunnel
-- Auto Update IP to Cloudflare Domain
+- AWS CloudFront CDN Support [`HTTP`/`HTTPs`] (*with your own AWS account*)
 - SWAP Memory 2GB
 - vnStat Web Interface
+- Auto Update IP to Cloudflare Domain
 - Lightweight CPU on idle after Fresh Install (*CPU Usage Avrg. 2-3%*)
 - Running the Service depends on the existing account (*Save Resources*)
 - Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
