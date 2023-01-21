@@ -1,1 +1,0 @@
-- {name: CONFIG_NAME, type: ss, server: IPVPS, port: PORT_TUNNEL, cipher: SS_CIPHER, password: PASSWORD, udp: true, plugin: v2ray-plugin, plugin-opts: {mode: websocket, tls: false, skip-cert-verify: true, host: DOMAINVPS, path: WSPATH, mux: true, headers: {Host: DOMAINVPS}}}
