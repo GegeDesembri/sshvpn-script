@@ -1,0 +1,1 @@
+- {name: CONFIG_NAME, type: ss, server: IPVPS, port: PORT_TUNNEL, cipher: SS_CIPHER, password: PASSWORD, udp: true}
