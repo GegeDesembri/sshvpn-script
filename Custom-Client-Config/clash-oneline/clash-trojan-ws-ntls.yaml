@@ -1,1 +1,1 @@
-- {name: trojan-ws-ntls, server: IPVPS, port: PORT_TUNNEL, type: trojan, password: "PASSWORD", tls: false, sni: DOMAINVPS, network: ws, skip-cert-verify: true, udp: true, ws-opts: {path: WSPATH, headers: {Host: DOMAINVPS}}}
+- {name: CONFIG_NAME, server: IPVPS, port: PORT_TUNNEL, type: trojan, password: "PASSWORD", tls: false, sni: DOMAINVPS, network: ws, skip-cert-verify: true, udp: true, ws-opts: {path: WSPATH, headers: {Host: DOMAINVPS}}}

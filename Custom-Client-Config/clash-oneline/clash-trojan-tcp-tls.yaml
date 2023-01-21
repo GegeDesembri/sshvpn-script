@@ -1,1 +1,1 @@
-- {name: trojan-tcp-tls, server: IPVPS, port: PORT_TUNNEL, type: trojan, password: "PASSWORD", tls: true, sni: DOMAINVPS, network: tcp, skip-cert-verify: true, udp: true}
+- {name: CONFIG_NAME, server: IPVPS, port: PORT_TUNNEL, type: trojan, password: "PASSWORD", tls: true, sni: DOMAINVPS, network: tcp, skip-cert-verify: true, udp: true}
