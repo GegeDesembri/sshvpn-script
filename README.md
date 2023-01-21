@@ -121,11 +121,19 @@ Jika tidak membutuhkan fitur *prefill* untuk kebutuhan penambahan, penghapusan, 
 
     echo 'disable' > /etc/gegevps/vpnray/vpnray-prefill
 
+Untuk membatalkan
+
+    rm -rf /etc/gegevps/vpnray/vpnray-prefill
+
 ### Disable Clash Configuration
 
 Jika tidak membutuhkan fitur *CLASH PROXY* bisa masukkan perintah dibawah ini.
 
     echo 'disable' > /etc/gegevps/vpnray/vpnray-clash
+
+Untuk membatalkan
+
+    rm -rf /etc/gegevps/vpnray/vpnray-clash
 
 ### Ganti banner OpenSSH/Dropbear
 
