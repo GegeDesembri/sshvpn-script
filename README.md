@@ -49,6 +49,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Cloudflare SSL
 - Cloudflare CDN Support
 - AWS CloudFront CDN Support [`HTTP`/`HTTPs`] (*with your own AWS account*)
+- Auto Generate Clash Configuration (`VMess`, `VLess`, `Trojan`, `Shadowsocks`, `Socks`)
 - SWAP Memory 2GB
 - vnStat Web Interface
 - Auto Update IP to Cloudflare Domain
