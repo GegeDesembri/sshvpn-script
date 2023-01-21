@@ -1,0 +1,10 @@
+proxies:
+  - name: CONFIG_NAME
+    type: socks5
+    server: IPVPS
+    port: PORT_TUNNEL
+    username: USERNAME
+    password: PASSWORD
+    tls: false
+    skip-cert-verify: true
+    udp: true
