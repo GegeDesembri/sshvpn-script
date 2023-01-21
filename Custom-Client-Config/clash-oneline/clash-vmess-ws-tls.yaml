@@ -1,0 +1,1 @@
+- {name: vmess-ws-tls, server: IPVPS, port: PORT_TUNNEL, type: vmess, uuid: UUID_DATA, sni: DOMAINVPS, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true, network: ws, ws-opts:{path: WSPATH, headers: {Host: DOMAINVPS}}}

@@ -1,7 +1,7 @@
 {
     "outbounds": [
         {
-            "protocol": "shadowsocks",
+            "protocol": "trojan",
             "mux": {
                 "concurrency": 8,
                 "enabled": true
@@ -11,23 +11,14 @@
                     {
                         "address": "IPVPS",
                         "port": PORT_TUNNEL,
-                        "method": "aes-128-gcm",
-                        "email": "PASSWORD",
-                        "password": "PASSWORD",
-                        "level": 0
+                        "password": "UUID",
+                        "level": LEVEL
                     }
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": true,
-                    "serverName": "DOMAINVPS"
-                },
-                "grpcSettings": {
-                    "serviceName": "SERVICENAME"
-                }
+                "network": "tcp",
+                "security": "none"
             },
             "tag": "proxy"
         },

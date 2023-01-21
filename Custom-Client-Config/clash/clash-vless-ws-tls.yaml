@@ -4,7 +4,7 @@ proxies:
     port: PORT_TUNNEL
     type: vless
     uuid: UUID_DATA
-    sni: DOMAIN
+    sni: DOMAINVPS
     alterId: 0
     cipher: auto
     tls: true
@@ -14,4 +14,4 @@ proxies:
     ws-opts: 
         path: WSPATH
         headers: 
-            Host: DOMAIN
+            Host: DOMAINVPS

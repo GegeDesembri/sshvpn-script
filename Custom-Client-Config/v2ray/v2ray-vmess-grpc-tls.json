@@ -1,20 +1,24 @@
 {
     "outbounds": [
         {
-            "protocol": "shadowsocks",
+            "protocol": "vmess",
             "mux": {
                 "concurrency": 8,
                 "enabled": true
             },
             "settings": {
-                "servers": [
+                "vnext": [
                     {
                         "address": "IPVPS",
                         "port": PORT_TUNNEL,
-                        "method": "aes-128-gcm",
-                        "email": "PASSWORD",
-                        "password": "PASSWORD",
-                        "level": 0
+                        "users": [
+                            {
+                                "id": "UUID",
+                                "alterId": ALTERID,
+                                "security": "SECURITY",
+                                "level": LEVEL
+                            }
+                        ]
                     }
                 ]
             },
@@ -26,7 +30,7 @@
                     "serverName": "DOMAINVPS"
                 },
                 "grpcSettings": {
-                    "serviceName": "SERVICENAME"
+                    "serviceName": "GRPC_SERVICENAME"
                 }
             },
             "tag": "proxy"

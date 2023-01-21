@@ -1,32 +1,35 @@
 {
     "outbounds": [
         {
-            "protocol": "shadowsocks",
+            "protocol": "vmess",
             "mux": {
                 "concurrency": 8,
                 "enabled": true
             },
             "settings": {
-                "servers": [
+                "vnext": [
                     {
                         "address": "IPVPS",
                         "port": PORT_TUNNEL,
-                        "method": "aes-128-gcm",
-                        "email": "PASSWORD",
-                        "password": "PASSWORD",
-                        "level": 0
+                        "users": [
+                            {
+                                "id": "UUID",
+                                "alterId": ALTERID,
+                                "security": "SECURITY",
+                                "level": LEVEL
+                            }
+                        ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "grpc",
-                "security": "tls",
-                "tlsSettings": {
-                    "allowInsecure": true,
-                    "serverName": "DOMAINVPS"
-                },
-                "grpcSettings": {
-                    "serviceName": "SERVICENAME"
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "headers": {
+                        "Host": "DOMAINVPS"
+                    },
+                    "path": "WSPATH"
                 }
             },
             "tag": "proxy"
