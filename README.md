@@ -22,6 +22,7 @@
 > [**Tutorial**](#Tutorial)
 
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
+- [Disable Clash Configuration](#disable-clash-configuration)
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti SSH Websocket Dropbear ke OpenSSH](#ganti-ssh-websocket-dropbear-ke-openssh)
 - [Ganti SSH Stunnel Dropbear ke OpenSSH](#ganti-ssh-stunnel-dropbear-ke-openssh)
