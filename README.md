@@ -184,7 +184,7 @@ Restart Stunnel
 
 ### Ganti Running Mode SSLHm SystemD ke screen
 
-***Perhatian***: *Penggantian ini akan mengubah Running Mode SSLHm port 80 dan 443 yang semula menggunkana SystemD menjadi screen melalui Scheduler Crontab. Hanya gunakan apabila ada memiliki masalah pada port 80 dan 443 yang tiba-tiba tidak bisa terhubung walaupun status di server Running tanpa masalah.*
+***Perhatian***: *Penggantian ini akan mengubah Running Mode SSLHm port 80 dan 443 yang semula menggunkana `SystemD` menjadi `screen` melalui Scheduler Crontab. Hanya gunakan apabila ada memiliki masalah pada port 80 dan 443 yang tiba-tiba tidak bisa terhubung walaupun status di server Running tanpa masalah.*
 
 Masukkan perintah dibawah ini.
 
