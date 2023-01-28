@@ -26,7 +26,6 @@
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti SSH Websocket Dropbear ke OpenSSH](#ganti-ssh-websocket-dropbear-ke-openssh)
 - [Ganti SSH Stunnel Dropbear ke OpenSSH](#ganti-ssh-stunnel-dropbear-ke-openssh)
-<!-- - [Ganti Running Mode SSLHm SystemD ke screen](#ganti-running-mode-sslhm-systemd-ke-screen) -->
 - [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
 - [Softether VPN Server Password](#softether-vpn-server-password)
 - [Cloudflare Public API Keys](#cloudflare-public-api-keys)
@@ -183,42 +182,6 @@ Ganti port 143 (`Dropbear`) menjadi 22 (`OpenSSH`)
 Restart Stunnel
 
     systemctl restart stunnel@server
-
-<!-- ### Ganti Running Mode SSLHm SystemD ke screen
-
-***Perhatian***: *Penggantian ini akan mengubah Running Mode SSLHm port 80 dan 443 yang semula menggunkana `SystemD` menjadi `screen` melalui Scheduler Crontab. Hanya gunakan apabila ada memiliki masalah pada port 80 dan 443 yang tiba-tiba tidak bisa terhubung walaupun status di server Running tanpa masalah.*
-
-Masukkan perintah dibawah ini.
-
-    crontab -l > /tmp/crontab.txt
-    echo '' >> /tmp/crontab.txt
-    echo -e '# SSLHm via screen
-    @reboot screen -dmS sslh-80 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/80.cfg
-    @reboot screen -dmS sslh-443 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/443.cfg' >> /tmp/crontab.txt
-    crontab /tmp/crontab.txt
-    rm -rf /tmp/crontab.txt
-    
-    systemctl disable sslhm@80 sslhm@443
-    systemctl stop sslhm@80 sslhm@443
-    screen -dmS sslh-80 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/80.cfg
-    screen -dmS sslh-443 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/443.cfg
-
-Untuk memastikan bahwa migrasi running mode sslhm 80 dan 443 berhasil. Masukkan perintah berikut ini.
-
-    crontab -l && screen -ls
-
-Pastikan output perintah terdapat beberapa baris berikut.
-
-    ...
-    @reboot screen -dmS sslh-80 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/80.cfg
-    @reboot screen -dmS sslh-443 /etc/gegevps-bin/sslh -f -n --config=/etc/gegevps/sslhm/443.cfg
-    ...
-    ...
-    713.sslh-80 (01/16/2023 09:47:31 PM) (Detached)
-    712.sslh-443 (01/16/2023 09:47:31 PM) (Detached)
-    ...
-
-Untuk lebih memastikan kembali silahkan mengetes langsung dengan perangkat menggunakan tunnel port 80 dan 443. -->
 
 ### Ganti Port SSH Stunnel ke 443 (Default 446)
 
