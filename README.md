@@ -1,4 +1,3 @@
-
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -23,7 +22,7 @@
 > [**Tutorial**](#Tutorial)
 
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
-- [Disable VPNRay Coloring Text](#)
+- [Disable VPNRay Coloring Text](#disable-vpnray-coloring-text)
 - [Disable Clash Configuration](#disable-clash-configuration)
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti SSH Websocket Dropbear ke OpenSSH](#ganti-ssh-websocket-dropbear-ke-openssh)
