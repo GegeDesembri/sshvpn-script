@@ -1,3 +1,4 @@
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -22,6 +23,7 @@
 > [**Tutorial**](#Tutorial)
 
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
+- [Disable VPNRay Coloring Text](#)
 - [Disable Clash Configuration](#disable-clash-configuration)
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti SSH Websocket Dropbear ke OpenSSH](#ganti-ssh-websocket-dropbear-ke-openssh)
@@ -128,6 +130,17 @@ Jika tidak membutuhkan fitur *prefill* untuk kebutuhan penambahan, penghapusan, 
 Untuk membatalkan
 
     rm -rf /etc/gegevps/vpnray/vpnray-prefill
+
+### Disable VPNRay Coloring Text
+
+Jika tidak membutuhkan fitur *Coloring* pada teks output. Gunakan perintah berikut ini.
+
+    echo 'disable' > /etc/gegevps/vpnray/vpnray-color
+
+Untuk membatalkan
+
+    rm -rf /etc/gegevps/vpnray/vpnray-color
+
 
 ### Disable Clash Configuration
 
