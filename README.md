@@ -26,6 +26,7 @@
 - [Ganti banner OpenSSH/Dropbear](#ganti-banner-opensshdropbear)
 - [Ganti SSH Websocket Dropbear ke OpenSSH](#ganti-ssh-websocket-dropbear-ke-openssh)
 - [Ganti SSH Stunnel Dropbear ke OpenSSH](#ganti-ssh-stunnel-dropbear-ke-openssh)
+<!-- - [Ganti Running Mode SSLHm SystemD ke screen](#ganti-running-mode-sslhm-systemd-ke-screen) -->
 - [Ganti Port SSH Stunnel ke 443 (Default 446)](#ganti-port-ssh-stunnel-ke-443-default-446)
 - [Softether VPN Server Password](#softether-vpn-server-password)
 - [Cloudflare Public API Keys](#cloudflare-public-api-keys)
@@ -183,7 +184,7 @@ Restart Stunnel
 
     systemctl restart stunnel@server
 
-### Ganti Running Mode SSLHm SystemD ke screen
+<!-- ### Ganti Running Mode SSLHm SystemD ke screen
 
 ***Perhatian***: *Penggantian ini akan mengubah Running Mode SSLHm port 80 dan 443 yang semula menggunkana `SystemD` menjadi `screen` melalui Scheduler Crontab. Hanya gunakan apabila ada memiliki masalah pada port 80 dan 443 yang tiba-tiba tidak bisa terhubung walaupun status di server Running tanpa masalah.*
 
@@ -217,7 +218,7 @@ Pastikan output perintah terdapat beberapa baris berikut.
     712.sslh-443 (01/16/2023 09:47:31 PM) (Detached)
     ...
 
-Untuk lebih memastikan kembali silahkan mengetes langsung dengan perangkat menggunakan tunnel port 80 dan 443.
+Untuk lebih memastikan kembali silahkan mengetes langsung dengan perangkat menggunakan tunnel port 80 dan 443. -->
 
 ### Ganti Port SSH Stunnel ke 443 (Default 446)
 
