@@ -55,7 +55,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - SWAP Memory 2GB
 - vnStat Web Interface
 - Cloudflare WARP [`V2ray`/`XRay`]
-- Load Balance [`80`/`443`] *Modular*
+- Load Balance [`80`/`443`] (*Modular: Default Enable*)
 - Auto Update IP to Cloudflare Domain
 - Lightweight CPU on idle after Fresh Install (*CPU Usage Avrg. 2-3%*)
 - Running the Service depends on the existing account (*Save Resources*)
