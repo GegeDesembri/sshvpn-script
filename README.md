@@ -54,7 +54,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Auto Generate Clash Configuration (`VMess`, `VLess`, `Trojan`, `Shadowsocks`, `Socks`)
 - SWAP Memory 2GB
 - vnStat Web Interface
-- Cloudflare WARP [`V2ray`/`XRay`]
+- Cloudflare WARP [`V2ray`/`XRay`] (*Modular: Default Disable*)
 - Load Balance [`80`/`443`] (*Modular: Default Enable*)
 - Auto Update IP to Cloudflare Domain
 - Lightweight CPU on idle after Fresh Install (*CPU Usage Avrg. 2-3%*)
