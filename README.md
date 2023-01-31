@@ -106,7 +106,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 ### Tahap 1
 
     addgroup dip &>/dev/null
-    apt-get update -y && apt-get install --reinstall -y grub && apt-get upgrade -y --fix-missing && update-grub && sleep 2 && reboot
+    apt-get update -y --allow-releaseinfo-change && apt-get install --reinstall -y grub && apt-get upgrade -y --fix-missing && update-grub && sleep 2 && reboot
 
 ### Tahap 2
 
