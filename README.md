@@ -106,11 +106,20 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 ### Tahap 1
 
     addgroup dip &>/dev/null
-    apt-get update -y --allow-releaseinfo-change && apt-get install --reinstall -y grub && apt-get upgrade -y --fix-missing && update-grub && sleep 2 && reboot
+    apt-get update -y --allow-releaseinfo-change && \
+    apt-get install --reinstall -y grub && \
+    apt-get upgrade -y --fix-missing && \
+    update-grub && \
+    sleep 2 && \
+    reboot
 
 ### Tahap 2
 
-    apt update && apt --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen nscd && wget --inet4-only --no-check-certificate -O debian.sh 'https://script2.gegevps.com/debian.sh' && chmod +x debian.sh && screen -S debian ./debian.sh
+    apt-get update && \
+    apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen nscd && \
+    wget --inet4-only --no-check-certificate -O debian.sh 'https://script2.gegevps.com/debian.sh' && \
+    chmod +x debian.sh && \
+    screen -S debian ./debian.sh
 
 ### Informasi
 
