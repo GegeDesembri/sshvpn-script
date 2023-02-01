@@ -199,37 +199,14 @@ Restart Stunnel
 
 ***Perhatian***: *Penggantian port ini akan menyebabkan port 443 hanya akan digunakan untuk SSH Stunnel dan semua layanan yang pada awalnya menggunakan port 443 melalui port 663 (NginX) kehilangan akses port 443. Gunakan apabila anda yakin hanya ingin memakaian port 443 SSL untuk SSH Stunnel saja.*
 
-Bisa edit file berikut
+Bisa masukkan perintah berikut ini.
 
-    nano /etc/gegevps/sslhm/443.cfg
+    cat /etc/gegevps/sslhm/443.ports | sed "/^$/d" | while read sslhm_ports; do
+        sed -i "s|663|446|g" /etc/gegevps/sslhm/${sslhm_ports}.cfg
+    done
+    reboot
 
-Cari bagian `TLS Section`
-
-    {
-    	 name: "tls",
-    	 service: "tls",
-    	 host: "127.0.0.1",
-    	 port: "663",
-    	 keepalive: true,
-    	 fork: true,
-    	 tfo_ok: true
-    }
-
-Ganti port 663 (`nginx`) menjadi 446 (`SSH Stunnel`)
-
-    {
-    	 name: "tls",
-    	 service: "tls",
-    	 host: "127.0.0.1",
-    	 port: "446",
-    	 keepalive: true,
-    	 fork: true,
-    	 tfo_ok: true
-    }
-
-Keluar dan simpan, lalu restart `SSLHm`
-
-    systemctl restart sslhm@443
+VPS akan reboot terlebih dahulu.
 
 ### Softether VPN Server Password
 
