@@ -56,7 +56,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Load Balance [`80`/`443`] (*Modular: Default Enable*)
 - Cloudflare WARP [`V2ray`/`XRay`] (*Modular: Default Disable*)
 - Lightweight CPU on idle after Fresh Install (*CPU Usage Avrg. 2-3%*)
-- Running the Service depends on the existing account (*Save Resources*)
+- Running the Service depends on the existing account (*Saving Resources*)
 - AWS CloudFront CDN Support [`HTTP`/`HTTPs`] (*with your own AWS account*)
 - Auto Generate Clash Configuration (`VMess`, `VLess`, `Trojan`, `Shadowsocks`, `Socks`)
 - Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
