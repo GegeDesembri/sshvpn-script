@@ -50,11 +50,12 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - vnStat Web Interface
 - Free Domain for Tunnel
 - Cloudflare CDN Support
-- One Port Multi Protocol
+- Multi Port Multi Protocol
 - Auto Update IP to Cloudflare Domain
 - SWAP Memory 2GB (*Modular: Default Enable*)
 - Load Balance [`80`/`443`] (*Modular: Default Enable*)
 - Cloudflare WARP [`V2ray`/`XRay`] (*Modular: Default Disable*)
+- Cloudflare WARP support Domain, GeoIP, and IP/CIDR Targeting
 - Lightweight CPU on idle after Fresh Install (*CPU Usage Avrg. 2-3%*)
 - Running the Service depends on the existing account (*Saving Resources*)
 - AWS CloudFront CDN Support [`HTTP`/`HTTPs`] (*with your own AWS account*)
