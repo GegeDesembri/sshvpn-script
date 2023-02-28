@@ -10,7 +10,7 @@
                 "servers": [
                     {
                         "address": "IPVPS",
-                        "port": PORT_TUNNEL,
+                        "port": 1111,
                         "method": "aes-128-gcm",
                         "email": "PASSWORD",
                         "password": "PASSWORD",
@@ -23,7 +23,7 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": true,
-                    "serverName": "DOMAINVPS"
+                    "serverName": "TLSSNI"
                 },
                 "wsSettings": {
                     "headers": {

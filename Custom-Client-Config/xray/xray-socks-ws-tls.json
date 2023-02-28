@@ -10,7 +10,7 @@
                 "servers": [
                     {
                         "address": "IPVPS",
-                        "port": PORT_TUNNEL,
+                        "port": 1111,
                         "users": [
                             {
                                 "user": "USERNAME",
@@ -26,7 +26,7 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": true,
-                    "serverName": "DOMAINVPS"
+                    "serverName": "TLSSNI"
                 },
                 "wsSettings": {
                     "headers": {

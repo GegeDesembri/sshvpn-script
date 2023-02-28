@@ -10,13 +10,13 @@
                 "vnext": [
                     {
                         "address": "IPVPS",
-                        "port": PORT_TUNNEL,
+                        "port": 1111,
                         "users": [
                             {
                                 "id": "UUID",
-                                "alterId": ALTERID,
-                                "security": "SECURITY",
-                                "level": LEVEL
+                                "alterId": 2222,
+                                "security": "SECURITY_TYPE",
+                                "level": 3333
                             }
                         ]
                     }

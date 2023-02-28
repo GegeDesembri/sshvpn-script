@@ -15,7 +15,7 @@
                             {
                                 "id": "UUID",
                                 "alterId": 2222,
-                                "security": "SECURITY",
+                                "security": "SECURITY_TYPE",
                                 "level": 3333
                             }
                         ]
@@ -27,7 +27,7 @@
                 "security": "tls",
                 "tlsSettings": {
                     "allowInsecure": true,
-                    "serverName": "DOMAINVPS"
+                    "serverName": "TLSSNI"
                 },
                 "wsSettings": {
                     "headers": {

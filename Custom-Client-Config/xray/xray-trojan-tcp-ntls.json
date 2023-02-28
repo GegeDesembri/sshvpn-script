@@ -10,9 +10,9 @@
                 "servers": [
                     {
                         "address": "IPVPS",
-                        "port": PORT_TUNNEL,
+                        "port": 1111,
                         "password": "UUID",
-                        "level": LEVEL
+                        "level": 3333
                     }
                 ]
             },
