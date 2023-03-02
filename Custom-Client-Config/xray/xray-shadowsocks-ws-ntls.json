@@ -11,7 +11,7 @@
                     {
                         "address": "IPVPS",
                         "port": 1111,
-                        "method": "aes-128-gcm",
+                        "method": "SSMETHOD",
                         "email": "PASSWORD",
                         "password": "PASSWORD",
                         "level": 0
