@@ -18,7 +18,11 @@
             },
             "streamSettings": {
                 "network": "tcp",
-                "security": "none"
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": true,
+                    "serverName": "TLSSNI"
+                }
             },
             "tag": "proxy"
         },
