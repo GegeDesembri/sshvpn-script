@@ -54,6 +54,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Auto Update IP to Cloudflare Domain
 - SWAP Memory 2GB (*Modular: Default Enable*)
 - Load Balance [`80`/`443`] (*Modular: Default Enable*)
+- SSH Limit login (*Disconnecting last session only*)
 - Cloudflare WARP [`V2ray`/`XRay`] (*Modular: Default Disable*)
 - Cloudflare WARP support Domain, GeoIP, and IP/CIDR Targeting
 - Lightweight CPU on idle after Fresh Install (*CPU Usage Avrg. 2-3%*)
