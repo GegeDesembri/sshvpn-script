@@ -249,8 +249,8 @@ Password akan muncul.
 ## Berlangganan
 
 - Proses pembelian bisa dilakukan melalui [GegeVPS Admin](https://t.me/GegeVPS)
-- Pembelian pertama untuk 1 IP Rp. 20.000,-
-- Perpanjangan Rp. 25.000,- /IP /30Hari
+- Pembelian pertama untuk 1 IP Rp. 25.000,-
+- Perpanjangan Rp. 20.000,- /IP /30Hari
 - Proses resolv IP pada database memakan waktu sekitar 5 - 10 menit
 - Selama masa Trial pastikan semua layanan dapat berjalan tanpa masalah
 - Pengujian koneksi layanan gunakan koneksi internet yang normal bukan menggunakan method
