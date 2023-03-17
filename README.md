@@ -63,6 +63,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Auto Generate Clash Configuration (`VMess`, `VLess`, `Trojan`, `Shadowsocks`, `Socks`)
 - Bandwidth Meter direct Provider API [*Hanya VPS yang dibeli dari* [*GegeVPS*](https://www.facebook.com/GegeEmbrie/)]
 - Support Bypass Site tertentu menggunakan V2Ray atau XRay (Dinsey+, Hotstar, Netflix, dan lain sebagainya)
+- VPNRay JSON Converter for Custom Config and HTTP Custom
 
 ### Persyaratan Sistem
 |Sistem|Supported|Tested|Minimal|Disarankan|
