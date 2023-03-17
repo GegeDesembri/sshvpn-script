@@ -66,6 +66,9 @@
             "domain:googleapis.cn": "googleapis.com"
         },
         "servers": [
+            "1.1.1.1",
+            "1.0.0.1",
+            "8.8.8.8",
             "8.8.4.4"
         ],
         "tag": "dns"
@@ -74,5 +77,30 @@
         "loglevel": "warning"
     },
     "inbounds": [
+        {
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "userLevel": 8
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "enabled": true
+            },
+            "tag": "socks"
+        },
+        {
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "userLevel": 8
+            },
+            "tag": "http"
+        }
     ]
 }
