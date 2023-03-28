@@ -220,7 +220,14 @@ Bisa masukkan perintah berikut ini.
     done
     reboot
 
-VPS akan reboot terlebih dahulu.
+Untuk membatalkan
+
+    cat /etc/gegevps/sslhm/443.ports | sed "/^$/d" | while read sslhm_ports; do
+        sed -i "s|446|663|g" /etc/gegevps/sslhm/${sslhm_ports}.cfg
+    done
+    reboot
+
+Setiap pengubahan konfigurasi dengan perintah diatas, VPS akan reboot terlebih dahulu.
 
 ### Softether VPN Server Password
 
