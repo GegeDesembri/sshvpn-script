@@ -21,6 +21,7 @@
 
 > [**Tutorial**](#Tutorial)
 
+- [Auto Reboot](#auto-reboot)
 - [Disable Pre-fill VPNRay](#disable-pre-fill-vpnray)
 - [Disable VPNRay Coloring Text](#disable-vpnray-coloring-text)
 - [Disable Clash Configuration](#disable-clash-configuration)
@@ -133,6 +134,25 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau melalui [AutoScript Technical Support](https://t.me/gegevps_sctech).
 
 ## Tutorial
+
+### Auto Reboot
+
+Secara default script ini tidak diberikan sistem auto reboot karena tidak semua pengguna membutuhkannya. Jika kamu ingin memasang auto reboot pada VPS bisa gunakan perintah berikut ini
+
+    crontab -l > /tmp/cron.txt
+    sed -i "/reboot$/d" /tmp/cron.txt
+    echo -e "\n"'0 4 * * * '"$(which reboot)" >> /tmp/cron.txt
+    crontab /tmp/cron.txt
+    rm -rf /tmp/cron.txt
+
+Perintah di atas akan memasang auto reboot setiap jam 04.00.
+
+Perintah untuk membatalkan.
+
+    crontab -l > /tmp/cron.txt
+    sed -i "/reboot$/d" /tmp/cron.txt
+    crontab /tmp/cron.txt
+    rm -rf /tmp/cron.txt
 
 ### Disable Pre-fill VPNRay
 
