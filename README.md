@@ -66,6 +66,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Support Bypass Site tertentu menggunakan V2Ray atau XRay (Disney+, Hotstar, Netflix, dan lain sebagainya)
 - VPNRay JSON Converter for Custom Config and HTTP Custom
 - Telegram Bot Remote
+- Telegram Bot Seller Panel [**Telegram Bot Panel**](https://github.com/GegeDesembri/sshvpn-telegram-panel)
 
 ### Persyaratan Sistem
 |Sistem|Supported|Tested|Minimal|Disarankan|
