@@ -67,7 +67,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - VPNRay JSON Converter for Custom Config and HTTP Custom
 - Telegram Bot Remote
 - Telegram Bot Seller Panel [**Telegram Bot Panel**](https://github.com/GegeDesembri/sshvpn-telegram-panel)
-- HideSSH Web Panel Plugin [_Included_] - Source [HideSSH Web Panel Plugin](https://github.com/hidessh99/Developers)
+- HideSSH Web Panel Plugin [_Included_] - Reference [HideSSH Web Panel Plugin](https://github.com/hidessh99/Developers)
 
 ### Persyaratan Sistem
 |Sistem|Supported|Tested|Minimal|Disarankan|
