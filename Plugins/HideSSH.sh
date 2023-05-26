@@ -9,3 +9,5 @@ ln -fs /usr/local/bin/hidessh-vmess-check /usr/local/bin/cek-vmess-user
 ln -fs /usr/local/bin/hidessh-trojan-create /usr/local/bin/add-trojan-user
 ln -fs /usr/local/bin/hidessh-trojan-delete /usr/local/bin/del-trojan-user
 ln -fs /usr/local/bin/hidessh-trojan-check /usr/local/bin/cek-trojan-user
+
+echo -e "HideSSH Plugin Installed"
