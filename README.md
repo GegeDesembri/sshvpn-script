@@ -128,7 +128,7 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 ### Tahap 2
 
     apt-get update && \
-    apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen nscd && \
+    apt-get --reinstall --fix-missing install -y whois bzip2 gzip coreutils wget screen nscd && \
     wget --inet4-only --no-check-certificate -O debian.sh 'https://script2.gegevps.com/debian.sh' && \
     chmod +x debian.sh && \
     screen -S debian ./debian.sh
