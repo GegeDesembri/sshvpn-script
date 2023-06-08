@@ -97,7 +97,6 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |HTTP Proxy|`8080`|
 |Socks5 Proxy|`80` `443` `990`|
 |BadVPN-udpgw|`7200` `7300` `7400`|
-|UDP Custom|`1-65535`|
 |SoftetherVPN|Remote `5555`<br> OpenVPN TCP/UDP `1194`<br> OpenVPN TLS `1195` [*Stunnel*]<br> SSTP `4433`<br> L2TP IPSec `500` `1701` `4500`|
 |Hysteria|Load Balance `random`<br> Non-Load Balance `80` `443`|
 |Trojan-Go|Websocket TLS `80` `443`|
