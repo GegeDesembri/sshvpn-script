@@ -1,3 +1,4 @@
+
 # Auto Script SSH/VPN
 
 ## Docs Index
@@ -112,31 +113,34 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 |XRay<br> [*`Dynamic`*]<br> [`Static`]|Path with Query <br> *`/YOURPATH?type=xray-vmess-ws-ntls`*<br> *`/YOURPATH?type=xray-vmess-ws-tls`*<br> *`/YOURPATH?type=xray-vless-ws-ntls`*<br> *`/YOURPATH?type=xray-vless-ws-tls`*<br> *`/YOURPATH?type=xray-trojan-ws-ntls`*<br> *`/YOURPATH?type=xray-trojan-ws-tls`*<br>*`/YOURPATH?type=xray-shadowsocks-ws-ntls`*<br> *`/YOURPATH?type=xray-shadowsocks-ws-tls`*<br>*`/YOURPATH?type=xray-socks-ws-ntls`*<br> *`/YOURPATH?type=xray-socks-ws-tls`*<br><br> Path without Query <br>*`/YOURPATH/xray-vmess-ws-tls`*<br> *`/YOURPATH/xray-vmess-ws-ntls`*<br> *`/YOURPATH/xray-vless-ws-ntls`*<br> *`/YOURPATH/xray-vless-ws-tls`*<br> *`/YOURPATH/xray-trojan-ws-ntls`*<br> *`/YOURPATH/xray-trojan-ws-tls`*<br> *`/YOURPATH/xray-shadowsocks-ws-ntls`* <br> *`/YOURPATH/xray-shadowsocks-ws-tls`*<br> *`/YOURPATH/xray-socks-ws-ntls`* <br> *`/YOURPATH/xray-socks-ws-tls`*<br> <br>gRPC Service Name <br> `xray-trojan-grpc-tls`<br>`xray-socks-grpc-tls`<br>`xray-shadowsocks-grpc-tls`<br> `xray-vless-grpc-tls`<br> `xray-vmess-grpc-tls`<br> <br> **Replace `YOURPATH` with your method path*<br> ***Path not marked with a "`?`" support for Clash* |
 
 
-## Instalasi
+## Installation
 
-### Tahap 1
+### Step 1
 
-    addgroup dip &>/dev/null
-    apt-get update -y --allow-releaseinfo-change && \
-    apt-get install --reinstall -y grub && \
-    apt-get upgrade -y --fix-missing && \
-    update-grub && \
-    sleep 2 && \
-    reboot
+    export DEBIAN_FRONTEND=noninteractive
+	addgroup dip &>/dev/null
+	apt-get update -y --allow-releaseinfo-change && \
+	apt-get install --reinstall -y grub && \
+	apt-get upgrade -y --fix-missing && \
+	update-grub && \
+	sleep 2 && \
+	reboot
 
-### Tahap 2
+### Step 2
 
-    apt-get update && \
-    apt-get --reinstall --fix-missing install -y whois bzip2 gzip coreutils wget screen nscd && \
-    wget --inet4-only --no-check-certificate -O debian.sh 'https://script2.gegevps.com/debian.sh' && \
-    chmod +x debian.sh && \
-    screen -S debian ./debian.sh
+	export DEBIAN_FRONTEND=noninteractive
+	source /etc/os-release
+	apt-get update && \
+	apt-get --reinstall --fix-missing install -y whois bzip2 gzip coreutils wget screen nscd && \
+	wget --inet4-only --no-check-certificate -O setup.sh "https://script.gegevps.com/deb${VERSION_ID}/setup.sh" && \
+	chmod +x setup.sh && \
+	screen -S setup ./setup.sh
 
 ### Informasi
 
-- Jika dalam proses instalasi [Tahap 2](#Tahap-2), terjadi diskoneksi pada terminal. Jangan masukkan kembali perintah instalasi [Tahap 2](#Tahap-2). Silahkan masukkan perintah `screen -r debian` untuk melihat proses yang telah berjalan.
+- Jika dalam proses instalasi [Step 2](#Step-2), terjadi diskoneksi pada terminal. Jangan masukkan kembali perintah instalasi [Step 2](#Step-2). Silahkan masukkan perintah `screen -r setup` untuk melihat proses yang telah berjalan.
 - Jika ingin melihat log instalasi dapat dilihat pada `/root/syslog.log`.
-- Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS) atau melalui [AutoScript Technical Support](https://t.me/gegevps_sctech).
+- Laporan bug bisa dilakukan pada akun [GegeVPS Admin](https://t.me/GegeVPS).
 
 ## Tutorial
 
