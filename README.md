@@ -16,8 +16,8 @@
 
 > [**Instalasi**](#Instalasi)
 
-- [Tahap 1](#Tahap-1)
-- [Tahap 2](#Tahap-2)
+- [Step 1](#Step-1)
+- [Step 2](#Step-2)
 - [Informasi](#Informasi)
 
 > [**Tutorial**](#Tutorial)
