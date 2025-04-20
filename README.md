@@ -2,7 +2,7 @@
 # Auto Script SSH/VPN
 
 > [!NOTE]  
-> Mulai 20 April 2025 autoscript ini bebas dan gratis untuk dipakai. Pengguna tidak memiliki kewajiban untuk melakukan pembayaran langganan. Langganan hanya diperlukan apabila pengguna membutuhkan support lebih oleh Admin untuk menangani dan mengelola server apabila terjadi masalah atau hal-hal lain seperti Bug dan semacamnya. Bantuan atau support dari Admin hanya untuk VPS dengan IP yang sudah terdaftar sebagai Premium Support.
+> **FREE TO USE**. Mulai 20 April 2025 autoscript ini bebas dan gratis untuk dipakai. Pengguna tidak memiliki kewajiban untuk melakukan pembayaran langganan. Langganan hanya diperlukan apabila pengguna membutuhkan support lebih oleh Admin untuk menangani dan mengelola server apabila terjadi masalah atau hal-hal lain seperti Bug dan semacamnya. Bantuan atau support dari Admin hanya untuk VPS dengan IP yang sudah terdaftar sebagai Premium Support.
 
 ## Docs Index
 
