@@ -10,6 +10,8 @@
 > [!IMPORTANT]
 > Autoscript ini menggunakan Cloudflare sebagai perantara untuk memanajemen Domain yang digunakan. Sayangnya Cloudflare telah menurunkan batas limit DNS Record per Domain dari 1000 menjadi 200 [[*sumber*]](https://developers.cloudflare.com/dns/troubleshooting/faq/#does-cloudflare-limit-the-number-of-dns-records-a-domain-can-have). Hal ini menyebabkan domain yang digunakan akan mencapai limit seiring bertambahnya orang yang memakai script ini dan itu akan menyebabkan script ini gagal dalam pemasangan.
 
+### [SOLUSI 1] Open Donasi Domain
+
 Oleh karena batasan ini, saya membuka bagi siapapun yang ingin menyumbangkan sebuah domain, bisa melakukannya secara mandiri dengan cara mengatur nameservers ke Cloudflare Nameservers dibawah ini
 
  - `gannon.ns.cloudflare.com`
@@ -61,6 +63,39 @@ untuk melihat daftar domain yang terintegrasi bisa kunjungi url
 ```url
 https://zones.gegevps.com/domains
 ```
+
+### [SOLUSI 2] Gunakan API Key dari akun Cloudflare Pribadi
+
+Pada langkah Step 2, gunakan penyesuaian berikut untuk memasukkan kode Cloudflare API Key
+
+```bash
+export DEBIAN_FRONTEND=noninteractive
+source /etc/os-release
+apt-get update && \
+apt-get --reinstall --fix-missing install -y whois bzip2 gzip coreutils wget screen nscd && \
+wget --inet4-only --no-check-certificate -O setup.sh "https://script.gegevps.com/deb${VERSION_ID}/setup.sh" && \
+chmod +x setup.sh && \
+screen -S setup ./setup.sh "CFAPIKEY"
+
+# Ganti CFAPIKEY dengan API Key milikmu
+```
+
+#### Cara membuat API Key
+
+1. Pergi ke https://dash.cloudflare.com/profile/api-tokens
+2. Pilih `Create Token`
+3. Pilih template `Edit zone DNS`, lalu `Use template`
+![Edit zone DNS Template](https://i.imgur.com/9l7CxbI.png)
+4. Beri nama API Key atau Token name dan sesuaikan pengaturan seperti pada gambar dibawah ini, pilih satu domain yang akan digunakan
+![API Key Setting](https://i.imgur.com/fyrnJgi.png)
+5. Jika sudah, klik `Continue to Summary`
+6. Periksa kembali ringkasan pengaturan, pastikan sesuai pada contoh dibawah in
+![Token Summary](https://i.imgur.com/OySG2Gf.png)
+7. Jika sudah yakin, klik `Create Token`
+8. API Key akan muncul seperti pada gambar dibawah ini
+![API Key Result](https://i.imgur.com/upz2Vng.png)
+9. Copy dan Simpan API key ditempat yang aman karena kode tersebut hanya diperlihat sekali saja.
+10. API Key sudah siap digunakan untuk instalasi Autoscript 
 
 Sekian, terima kasih atas partisipasinya. Semoga bermanfaat
 
