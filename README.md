@@ -1,8 +1,68 @@
 
+
 # Auto Script SSH/VPN
 
 > [!NOTE]  
 > **FREE TO USE**. Mulai 20 April 2025 autoscript ini bebas dan gratis untuk dipakai. Pengguna tidak memiliki kewajiban untuk melakukan pembayaran langganan. Langganan hanya diperlukan apabila pengguna membutuhkan support lebih oleh Admin untuk menangani dan mengelola server apabila terjadi masalah atau hal-hal lain seperti Bug dan semacamnya. Bantuan atau support dari Admin hanya untuk VPS dengan IP yang sudah terdaftar sebagai Premium Support.
+
+## Batasan Cloudflare DNS Records
+
+> [!IMPORTANT]
+> Autoscript ini menggunakan Cloudflare sebagai perantara untuk memanajemen Domain yang digunakan. Sayangnya Cloudflare telah menurunkan batas limit DNS Record per Domain dari 1000 menjadi 200 [[*sumber*]](https://developers.cloudflare.com/dns/troubleshooting/faq/#does-cloudflare-limit-the-number-of-dns-records-a-domain-can-have). Hal ini menyebabkan domain yang digunakan akan mencapai limit seiring bertambahnya orang yang memakai script ini dan itu akan menyebabkan script ini gagal dalam pemasangan.
+
+Oleh karena batasan ini, saya membuka bagi siapapun yang ingin menyumbangkan sebuah domain, bisa melakukannya secara mandiri dengan cara mengatur nameservers ke Cloudflare Nameservers dibawah ini
+
+ - `gannon.ns.cloudflare.com`
+ - `pat.ns.cloudflare.com`
+
+Kemudian lakukan curl 
+```bash
+curl --location --request POST 'zones.gegevps.com/zone' \
+--header 'domain: <DOMAINMU>'
+```
+Akan diperoleh output kurang lebih seperti ini
+
+```json
+{
+    "message": "Zone added successfully",
+    "result": {
+        "id": "fde38dee7cc6346d475e2986exxxxx",
+        "name": "domainmu.com",
+        "status": "pending",
+        "name_servers": [
+            "gannon.ns.cloudflare.com",
+            "pat.ns.cloudflare.com"
+        ]
+    }
+}
+```
+
+Pantau aktivasi domain disini
+
+```url
+https://zones.gegevps.com/domain/<DOMAINMU>
+```
+
+Jika `status` bernilai `active` seperti pada sampel dibawah ini maka domain telah berhasil terintegrasi dengan autoscript
+
+```json
+{
+  "domain": "<DOMAINMU>",
+  "created_on": "2022-12-16T17:49:17.320690Z",
+  "status": "active",
+  "records": 0,
+  "records_remaining": 1000,
+  "record_limit_estimate": 1000,
+  "percentage_used": 0
+}
+```
+
+untuk melihat daftar domain yang terintegrasi bisa kunjungi url
+```url
+https://zones.gegevps.com/domains
+```
+
+Sekian, terima kasih atas partisipasinya. Semoga bermanfaat
 
 ## Docs Index
 
@@ -17,7 +77,7 @@
 - [Port List](#Port-List)
 - [Websocket Path List](#Websocket-Path-List)
 
-> [**Instalasi**](#Instalasi)
+> [**Installation**](#Installation)
 
 - [Step 1](#Step-1)
 - [Step 2](#Step-2)
