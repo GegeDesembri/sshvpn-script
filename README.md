@@ -1,5 +1,3 @@
-
-
 # Auto Script SSH/VPN
 
 > [!NOTE]  
@@ -165,8 +163,8 @@ Peningkatan status script ke Premium akan membuka semua akses yang tidak ada pad
 - Support Bypass Site tertentu menggunakan V2Ray atau XRay (Disney+, Hotstar, Netflix, dan lain sebagainya)
 - VPNRay JSON Converter for Custom Config and HTTP Custom
 - Telegram Bot Remote
-- WebAPI Services for Web Development - [**Documentation**](https://github.com/GegeDesembri/sshvpn-api)
-- Telegram Bot Seller Panel - [**Documentation**](https://github.com/GegeDesembri/sshvpn-telegram-panel)
+- WebAPI Services for Web Development - [**Documentation**](https://github.com/GegeDevs/sshvpn-api)
+- Telegram Bot Seller Panel - [**Documentation**](https://github.com/GegeDevs/sshvpn-telegram-panel)
 - HideSSH Web Panel Plugin [_Included_] - Reference [**HideSSH Web Panel Plugin**](https://github.com/hidessh99/Developers)
 
 ### Persyaratan Sistem
